@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Data Structures Python</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Data Structures Python</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#data-structures-python" class="nav-link">Data Structures Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#project-layout-and-organization" class="nav-link">Project Layout and Organization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#learning-objectives" class="nav-link">Learning Objectives</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#data-structures-implemented" class="nav-link">Data Structures Implemented</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#documentation-website" class="nav-link">Documentation Website</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#package-distribution" class="nav-link">Package Distribution</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#package-installation" class="nav-link">Package Installation:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#example-usage" class="nav-link">Example Usage:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#development-and-build-tools" class="nav-link">Development and Build Tools</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#enhancements-and-extras" class="nav-link">Enhancements and Extras</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#contributions-and-community" class="nav-link">Contributions and Community</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="data-structures-python">Data Structures Python</h1>
+<p>Data Structures Python is a pedagogical Python package designed to help learners understand and implement core data structures from scratch using Object-Oriented Programming (OOP) principles. The project introduces foundational structures—such as stacks, queues, linked lists, and binary search trees—and provides interactive Jupyter notebooks to demonstrate their usage. It serves both as a learning resource and a practical toolkit for exploring how these structures behave under the hood.</p>
+<h1 id="project-layout-and-organization">Project Layout and Organization</h1>
+<p>The repository is structured to promote clarity and modularity:
+data_structures/: This folder contains all Python modules implementing individual data structures. Each file encapsulates a single structure with class-based definitions and relevant methods.
+examples/: Includes Jupyter notebooks that demonstrate how to use each data structure interactively. These examples serve both as usage demonstrations and testing environments.
+README.md: A comprehensive guide providing background, setup instructions, and key usage notes.
+pyproject.toml and setup.py: Used to define the package’s metadata, build instructions, and dependencies for PyPI distribution.
+LICENSE: Specifies the usage rights and licensing terms under the MIT license.</p>
+<h1 id="learning-objectives">Learning Objectives</h1>
+<p>This project is intended to:
+. Illustrate how fundamental data structures are built from the ground up.
+. Reinforce principles of object-oriented programming through practical implementation.
+. Provide hands-on experience with abstract data types (ADTs) and their behaviors.
+. Foster experimentation through interactive notebooks that visualize and test structure operations.</p>
+<h1 id="data-structures-implemented">Data Structures Implemented</h1>
+<p>The package features a collection of essential data structures, each built using class-based design and equipped with relevant methods:</p>
+<table>
+<thead>
+<tr>
+<th>Data Structure</th>
+<th>Required Methods</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stack</td>
+<td><code>push()</code>, <code>pop()</code>, <code>peek()</code>, <code>is_empty()</code></td>
+</tr>
+<tr>
+<td>Queue</td>
+<td><code>enqueue()</code>, <code>dequeue()</code>, <code>peek()</code>, <code>is_empty()</code></td>
+</tr>
+<tr>
+<td>Singly Linked List</td>
+<td><code>insert()</code>, <code>delete()</code>, <code>search()</code>, <code>traverse()</code></td>
+</tr>
+<tr>
+<td>Binary Search Tree (BST)</td>
+<td><code>insert()</code>, <code>search()</code>, <code>inorder_traversal()</code></td>
+</tr>
+</tbody>
+</table>
+<p>Each implementation is encapsulated in its own class, following a modular and reusable coding style.</p>
+<h1 id="documentation-website">Documentation Website</h1>
+<p>A comprehensive documentation site accompanies this package. Built using https://www.mkdocs.org/, it includes:
+* Explanations of each data structure.
+* Code samples and walkthroughs.
+* Links to example notebooks.
+* Installation and contribution guides.
+* Visit the documentation at:</p>
+<h1 id="package-distribution">Package Distribution</h1>
+<p>The package is published on the Python Package Index (PyPI), allowing it to be easily installed in any environment.</p>
+<h2 id="package-installation">Package Installation:</h2>
+<p>Open bash and run this command: 
+pip install data-structures-py</p>
+<h2 id="example-usage">Example Usage:</h2>
+<p>Using a cPython compiler, run this pseudocode:
+from data_structures.stack import Stack
+s = Stack()
+s.push(10)
+s.push(20)
+print(s.pop())  # Outputs: 20</p>
+<p>The examples/ directory contains more detailed use cases for each data structure in notebook form.</p>
+<h1 id="development-and-build-tools">Development and Build Tools</h1>
+<p>The project follows modern Python packaging conventions using pyproject.toml. It includes all metadata required to build and distribute the package using tools such as build and twine. Developers can:</p>
+<ul>
+<li>Create a virtual environment</li>
+<li>Install dependencies like build and twine</li>
+<li>Build the project with python -m build</li>
+<li>Upload to PyPI using twine upload dist/*</li>
+</ul>
+<p>The project also provides a solid foundation for contributing new data structures or extending existing functionality.</p>
+<h1 id="enhancements-and-extras">Enhancements and Extras</h1>
+<p>🧾 Docstrings and Type Hints: Every method is fully documented and typed to ensure readability and maintainability.
+📊 Visualization Support: Future updates will introduce visualization of structures using tools such as matplotlib and networkx.
+🔬 Tutorial Notebooks: Interactive notebooks offer step-by-step exploration and testing of each class.
+🌍 Public Website: All documentation is hosted for easy public access and continuous learning.</p>
+<h1 id="license">License</h1>
+<p>This project is licensed under the MIT License, promoting open collaboration and reuse. See the LICENSE file for details.</p>
+<h1 id="contributions-and-community">Contributions and Community</h1>
+<p>Contributions are welcome and encouraged. Whether it’s fixing a bug, adding a feature, or improving documentation, the goal is to create a helpful resource for anyone interested in learning about data structures.
+For issues, pull requests, or ideas, please visit the https://github.com/wycliffenzomo/data-structures-python</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-04-12 19:40:38.301529+00:00
+-->
