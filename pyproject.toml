@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "data-structures-python"
+version = "0.1.0"
+description = "A beginner-friendly Python package implementing core data structures"
+authors = [{ name="wycliffe Nzomo", email="wycliffenzomo@email.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/wycliffenzomo/data-structures-python"
+"Repository" = "https://github.com/wycliffenzomo/data-structures-python"
+"Issue Tracker" = "https://github.com/wycliffenzomo/data-structures-python/issues"

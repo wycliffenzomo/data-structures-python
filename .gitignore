@@ -1,0 +1,10 @@
+data_structures_py.egg-info
+dist/
+wicky_data_structures_py.egg-info/
+venv/
+venv2/
+site/
+__pycache__/
+.ipynb_checkpoints/
+.Python
+*.pyc
